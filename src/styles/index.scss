@@ -1,8 +1,11 @@
-@use "reset";
-@use "variables" as v;
+@use 'reset';
+@use 'font-size';
+@use 'layouts';
+@use 'custom-styles';
+@use 'variables' as v;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,4 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: white;
 }

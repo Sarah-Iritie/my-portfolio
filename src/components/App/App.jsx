@@ -1,7 +1,14 @@
 import './App.scss';
+import Header from '../Header/Header';
+import Home from '../Home/Home';
 
 function App() {
-  return <div className="container">Hello World</div>;
+  return (
+    <div>
+      <Header />
+      <Home />
+    </div>
+  );
 }
 
 export default App;
