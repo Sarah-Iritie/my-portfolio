@@ -1,1 +1,28 @@
 @use '@scssVariables' as v;
+
+.about {
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    font-size: 2.5rem;
+    color: v.$gray;
+    margin-top: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &-text {
+    font-size: 1.2rem;
+    color: v.$gray;
+    margin-top: 1.5rem;
+    margin-inline-start: 23%;
+    margin-inline-end: 23%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.text-highlight {
+  color: #a7a4e6;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

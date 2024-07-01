@@ -1,6 +1,6 @@
 @use '@scssVariables' as v;
 
-/* Unused CSS animation */
+/* Unused CSS animation 
 
 @keyframes jumpInfinite {
   0% {
@@ -37,12 +37,24 @@
   border-right: 4px solid;
   border-radius: 4px;
   transform: rotateZ(45deg);
+}*/
+
+.animation {
+  width: 100%;
+
+  &-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 .container {
   z-index: 2;
   .text-animate {
-    animation-duration: 1s;
+    animation-duration: 1.7s;
   }
 
   .content {

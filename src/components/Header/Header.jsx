@@ -9,15 +9,15 @@ export default function Header() {
         <div className="list">
           <ul className="list-menu text-uppercase">
             <li className="list-item fw-normal">
-              <a className="fw-semibold" href="#">
+              <a className="fw-semibold" href="/">
                 jarjen
               </a>
             </li>
             <li className="list-item fw-normal">
-              <a href="#">a propos</a>
+              <a href="#About">a propos</a>
             </li>
             <li className="list-item fw-normal">
-              <a className="bg-purple text-blank rounded" href="#">
+              <a className="bg-purple text-blank rounded" href="#Work">
                 projets
               </a>
             </li>
