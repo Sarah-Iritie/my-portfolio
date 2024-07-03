@@ -6,9 +6,11 @@
   margin-top: -2rem;
   border-bottom: 1px solid v.$gray;
   font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 10;
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgb(255, 255, 255, 0.7);
 }
 
 .nav-header {

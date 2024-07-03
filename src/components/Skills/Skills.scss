@@ -1,0 +1,46 @@
+@use '@scssVariables' as v;
+
+.skills {
+  &-title {
+    font-size: 2.5rem;
+    margin: 2.5rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.skill-container {
+  margin-bottom: 2rem;
+  .skill-subtitle {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.skill-wrapper {
+  display: block;
+  .items {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding-bottom: 50px;
+    width: 50%;
+    margin: 0 auto;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      background: v.$grey-light;
+      padding: 10px;
+      border-radius: 7px;
+      margin: 12px;
+
+      svg {
+        margin-right: 15px;
+      }
+      .skill-text {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}

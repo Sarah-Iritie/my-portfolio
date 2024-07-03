@@ -19,7 +19,9 @@ export default function Work() {
       <div id="Work" className="work">
         <div className="work-content">
           {' '}
-          <h2 className="work-title text-center text-uppercase">Mes projets</h2>
+          <h2 className="work-title text-center fw-bold text-uppercase">
+            Mes projets
+          </h2>
         </div>
       </div>
       <div className="gallery">

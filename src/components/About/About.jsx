@@ -5,7 +5,7 @@ export default function About() {
     <div id="About" className="about">
       <div className="about-content">
         {' '}
-        <h2 className="about-title fw-bold text-uppercase text-center">
+        <h2 className="about-title text-center fw-bold text-uppercase">
           A propos
         </h2>
         <p className="about-text text-center">

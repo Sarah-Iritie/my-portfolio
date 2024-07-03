@@ -1,5 +1,4 @@
 import './Header.scss';
-import { Icon } from '@iconify/react';
 
 export default function Header() {
   return (
@@ -22,10 +21,10 @@ export default function Header() {
               </a>
             </li>
             <li className="list-item fw-normal">
-              <a href="#">compétences</a>
+              <a href="#Skill">compétences</a>
             </li>
             <li className="list-item fw-normal">
-              <a href="#">contact</a>
+              <a href="#Contact">contact</a>
             </li>
             <li
               className=" fw-normal"
