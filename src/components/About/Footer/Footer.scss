@@ -1,0 +1,16 @@
+@use '@scssVariables' as v;
+
+.footer {
+  z-index: 11;
+
+  .footer-links {
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 1.5rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
