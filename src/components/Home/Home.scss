@@ -1,25 +1,21 @@
 @use '@scssVariables' as v;
 
-.animation {
-  width: 100%;
-
-  &-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 12;
-    cursor: pointer;
-  }
-}
-
 .container {
+  width: 100%;
   z-index: 2;
+
+  &.dark {
+    background: #33333c;
+  }
   .text-animate {
     animation-duration: 1.7s;
   }
 
   .content {
+    .dark-text {
+      color: #fff;
+    }
+
     position: relative;
     &-title,
     &-subtitle {
@@ -43,4 +39,31 @@
       z-index: 9;
     }
   }
+}
+
+.animation {
+  width: 100%;
+
+  &-container {
+    //margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+    cursor: pointer 8;
+
+    a {
+      text-decoration: none !important;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    &.dark {
+      background: #33333c;
+    }
+  }
+}
+
+.scroll-text {
+  letter-spacing: 0.12em;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }

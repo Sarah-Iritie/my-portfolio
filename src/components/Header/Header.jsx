@@ -1,8 +1,11 @@
 import './Header.scss';
+import { useDarkMode } from '../DarkModeContext/DarkModeContext';
 
 export default function Header() {
+  const { isDark, toggleDark } = useDarkMode();
+
   return (
-    <div className="nav">
+    <div className={`nav ${isDark ? 'dark' : ''}`}>
       <div className="nav-header">
         {' '}
         <div className="list">
@@ -30,8 +33,8 @@ export default function Header() {
               className=" fw-normal"
               style={{ float: 'right', marginTop: '-0.1rem' }}
             >
-              <a className="mode" href="#">
-                dark
+              <a className="mode" href="#" onClick={toggleDark}>
+                {isDark ? 'light' : 'dark'}
               </a>
             </li>
           </ul>

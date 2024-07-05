@@ -40,6 +40,9 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+      <div className="copyright text-center">
+        <small>&copy; 2024 Jarjen</small>
+      </div>
     </div>
   );
 }

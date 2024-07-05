@@ -247,15 +247,17 @@ export default function Work() {
                   <p className="tools-subtitle">Sass</p>
                 </div>
               </div>
-              <a
-                className="text-blank"
-                href="https://www.adoptareborn.com/"
-                target="_blank"
-              >
-                <p className="txt text-center mg-top text-uppercase fw-regular">
-                  Voir le projet
-                </p>
-              </a>
+              <div className="txt">
+                <a
+                  className="text-blank"
+                  href="https://www.adoptareborn.com/"
+                  target="_blank"
+                >
+                  <p className="txt-effect mg-top text-uppercase fw-regular">
+                    Voir le projet
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -331,11 +333,13 @@ export default function Work() {
                 </div>
               </div>
             </div>
-            <a className="text-blank" href="#" target="_blank">
-              <p className="txt text-center mg-top text-uppercase fw-regular">
-                Voir le projet
-              </p>
-            </a>
+            <div className="txt">
+              <a className="text-blank" href="#" target="_blank">
+                <p className="txt-effect mg-top text-uppercase fw-regular">
+                  Voir le projet
+                </p>
+              </a>
+            </div>
           </div>
         </Slider>
       </div>

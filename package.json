@@ -13,7 +13,6 @@
   "dependencies": {
     "@vitejs/plugin-react": "^4.0.3",
     "animate.css": "^4.1.1",
-    "lottie-react": "^2.4.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

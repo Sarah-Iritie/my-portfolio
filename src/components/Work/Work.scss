@@ -150,21 +150,32 @@
 }
 
 .txt {
-  font-size: 1rem;
-  border-radius: 4px;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 21%;
-    height: 3px;
-    background: #a7a4e6;
-    transform: translateX(-50%);
+  .txt-effect {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      background: #a7a4e6;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      transform-origin: bottom left;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
   }
 }
