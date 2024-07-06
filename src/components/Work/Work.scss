@@ -5,11 +5,21 @@
   height: 100%;
   padding-top: 5px;
 
+  &.dark {
+    background: #33333c;
+    color: #fff;
+  }
+
   &-title {
     font-size: 2.5rem;
     margin: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
   }
+}
+
+.work.dark .work-content .work-title {
+  margin: 0;
+  padding: 2.7rem;
 }
 
 .carousel-info {
@@ -29,6 +39,10 @@
   position: relative;
   margin: 0 auto;
   padding: 0 50px;
+
+  &.dark {
+    background: #33333c;
+  }
 
   // Navigation arrows
   .slick-prev,
@@ -113,6 +127,11 @@
       overflow: hidden;
       max-width: 100%;
       position: relative;
+
+      &.dark {
+        background: #42424d;
+        color: #fff;
+      }
       img {
         display: block;
         width: 100%;
@@ -129,6 +148,7 @@
   margin-top: 1.5rem;
   position: relative;
   cursor: text;
+
   &-dev {
     display: flex;
     justify-content: center;
@@ -174,8 +194,16 @@
       transform-origin: bottom left;
     }
 
+    &.dark::after {
+      background: #6767ff;
+    }
+
     &:hover::after {
       transform: scaleX(1);
+    }
+
+    &.dark {
+      color: #fff;
     }
   }
 }

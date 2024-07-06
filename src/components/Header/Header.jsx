@@ -33,7 +33,11 @@ export default function Header() {
               className=" fw-normal"
               style={{ float: 'right', marginTop: '-0.1rem' }}
             >
-              <a className="mode" href="#" onClick={toggleDark}>
+              <a
+                className="mode"
+                style={{ cursor: 'pointer' }}
+                onClick={toggleDark}
+              >
                 {isDark ? 'light' : 'dark'}
               </a>
             </li>

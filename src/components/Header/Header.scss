@@ -66,3 +66,8 @@
   padding: 7px;
   border-radius: 4px;
 }
+
+.nav-header .list-item a::selection,
+.mode::selection {
+  background: transparent; // Makes the selection invisible
+}
