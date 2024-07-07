@@ -3,6 +3,19 @@
 .footer {
   z-index: 11;
 
+  &.dark {
+    background: v.$grey-dark;
+
+    .footer-links .footer-icons {
+      margin: 0;
+      padding-top: 2rem;
+    }
+
+    small {
+      color: #fff;
+    }
+  }
+
   .footer-links {
     .footer-icons {
       display: flex;

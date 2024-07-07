@@ -5,7 +5,7 @@ import About from '../About/About';
 import Work from '../Work/Work';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
-import Footer from '../About/Footer/Footer';
+import Footer from '../Footer/Footer';
 import { DarkModeProvider } from '../DarkModeContext/DarkModeContext';
 
 function App() {

@@ -13,7 +13,7 @@
   background: rgb(255, 255, 255, 0.7);
 
   &.dark {
-    background: #33333c;
+    background: v.$grey-dark;
 
     .list-menu li a {
       color: #fff;

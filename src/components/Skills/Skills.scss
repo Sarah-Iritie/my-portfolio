@@ -9,7 +9,7 @@
   }
 
   &.dark {
-    background: #33333c;
+    background: v.$grey-dark;
     color: #fff;
   }
 }
@@ -23,7 +23,7 @@
   margin-bottom: 2rem;
 
   &.dark-text {
-    background: #33333c;
+    background: v.$grey-dark;
     color: #fff;
     margin: 0;
   }
@@ -38,8 +38,9 @@
   display: block;
 
   &.dark {
-    background: #33333c;
+    background: v.$grey-dark;
   }
+
   .items {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
