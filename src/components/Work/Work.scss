@@ -128,7 +128,7 @@
       max-width: 100%;
       position: relative;
 
-      &.dark {
+      &.dark-text {
         background: #42424d;
         color: #fff;
       }
@@ -194,7 +194,7 @@
       transform-origin: bottom left;
     }
 
-    &.dark::after {
+    &.dark-text::after {
       background: #6767ff;
     }
 
@@ -202,7 +202,7 @@
       transform: scaleX(1);
     }
 
-    &.dark {
+    &.dark-text {
       color: #fff;
     }
   }
