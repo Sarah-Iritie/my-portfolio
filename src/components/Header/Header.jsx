@@ -1,8 +1,25 @@
 import './Header.scss';
+import { useEffect, useState } from 'react';
 import { useDarkMode } from '../DarkModeContext/DarkModeContext';
 
 export default function Header() {
   const { isDark, toggleDark } = useDarkMode();
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    const loadedAudio = new Audio('../assets/light_switch_sound.mp3');
+    loadedAudio.preload = 'auto'; // Load audio
+    setAudio(loadedAudio);
+  }, []);
+
+  const handleToggleDark = () => {
+    if (audio) {
+      audio
+        .play() // Play the sound
+        .catch((error) => console.error('Error playing sound: ', error));
+    }
+    toggleDark(); // Toggle light/dark mode
+  };
 
   return (
     <div className={`nav ${isDark ? 'dark' : ''}`}>
@@ -36,7 +53,7 @@ export default function Header() {
               <a
                 className="mode"
                 style={{ cursor: 'pointer' }}
-                onClick={toggleDark}
+                onClick={handleToggleDark}
               >
                 {isDark ? 'light' : 'dark'}
               </a>
