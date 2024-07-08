@@ -6,20 +6,17 @@ import Work from '../Work/Work';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
-import { DarkModeProvider } from '../DarkModeContext/DarkModeContext';
 
 function App() {
   return (
     <div>
-      <DarkModeProvider>
-        <Header />
-        <Home />
-        <About />
-        <Work />
-        <Skills />
-        <Contact />
-        <Footer />
-      </DarkModeProvider>
+      <Header />
+      <Home />
+      <About />
+      <Work />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
 }
