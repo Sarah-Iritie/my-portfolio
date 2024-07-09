@@ -69,3 +69,25 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
+/*** Responsive ***/
+
+@media screen and (max-width: 425px) {
+  .container {
+    margin-top: 2.5rem;
+    .content {
+      &-title {
+        font-size: 3rem;
+      }
+
+      &-subtitle {
+        font-size: 3rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .animation .animation-container img {
+    padding-top: 2rem;
+  }
+}
