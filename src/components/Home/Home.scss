@@ -72,6 +72,61 @@
 
 /*** Responsive ***/
 
+@media screen and (min-width: 769px) and (max-width: 863px) {
+  .container {
+    margin-top: 2.5rem;
+    .content {
+      &-title {
+        font-size: 7rem;
+      }
+
+      &-subtitle {
+        font-size: 7rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .content {
+      &-title {
+        font-size: 6rem;
+      }
+
+      &-subtitle {
+        font-size: 6rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .animation .animation-container img {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 595px) {
+  .container {
+    margin-top: 2.5rem;
+    .content {
+      &-title {
+        font-size: 4rem;
+      }
+
+      &-subtitle {
+        font-size: 4rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .animation .animation-container img {
+    padding-top: 3rem;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .container {
     margin-top: 2.5rem;

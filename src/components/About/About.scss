@@ -43,3 +43,21 @@
   font-size: 1.2rem;
   font-weight: 700;
 }
+
+/*** Responsive ***/
+
+@media screen and (max-width: 768px) {
+  .about {
+    h2.about-title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about {
+    h2.about-title {
+      font-size: 1.8rem;
+    }
+  }
+}

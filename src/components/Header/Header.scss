@@ -77,7 +77,13 @@ body.dark {
 
 /*** Responsive ***/
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 768px) {
+  .secondnav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav-header {
     display: none;
   }
@@ -117,11 +123,5 @@ body.dark {
     img {
       filter: brightness(0) invert(1);
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .secondnav {
-    display: none;
   }
 }

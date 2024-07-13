@@ -15,6 +15,17 @@ export default function Work() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 734,
+        settings: {
+          dots: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (

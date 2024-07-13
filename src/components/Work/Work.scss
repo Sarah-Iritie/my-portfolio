@@ -134,6 +134,7 @@
         background: #42424d;
         color: #fff;
       }
+
       img {
         display: block;
         width: 100%;
@@ -206,6 +207,70 @@
 
     &.dark-text {
       color: #fff;
+    }
+  }
+}
+
+/*** Responsive ***/
+
+@media screen and (min-width: 768px) and (max-width: 1370px) {
+  .gallery {
+    .gallery-item {
+      min-height: 70vh;
+    }
+  }
+
+  .tools {
+    width: 100%;
+    margin-top: 1.5rem;
+    position: relative;
+    cursor: text;
+
+    &-dev {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    &-title {
+      font-size: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    .gallery-item {
+      min-height: 90vh;
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .tools {
+    width: 100%;
+    margin-top: 1.5rem;
+    position: relative;
+    cursor: text;
+
+    &-dev {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .work {
+    &-title {
+      font-size: 1.8rem;
     }
   }
 }
