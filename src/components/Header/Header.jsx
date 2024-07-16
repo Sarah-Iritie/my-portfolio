@@ -1,13 +1,14 @@
 import './Header.scss';
 import { useEffect, useState } from 'react';
 import { useDarkMode } from '../DarkModeContext/DarkModeContext';
+import lightSwitchSound from '/assets/light_switch_sound.mp3';
 
 export default function Header() {
   const { isDark, toggleDark } = useDarkMode();
   const [audio, setAudio] = useState(null);
 
   useEffect(() => {
-    const loadedAudio = new Audio('../assets/light_switch_sound.mp3');
+    const loadedAudio = new Audio(lightSwitchSound);
     loadedAudio.preload = 'auto'; // Load audio
     setAudio(loadedAudio);
   }, []);
@@ -21,7 +22,9 @@ export default function Header() {
     if (audio) {
       audio
         .play() // Play the sound
-        .catch((error) => console.error('Error playing sound: ', error));
+        .catch((error) => {
+          console.error('Error playing sound: ', error);
+        });
     }
     toggleDark(); // Toggle light/dark mode
   };

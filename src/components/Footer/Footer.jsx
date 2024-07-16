@@ -9,7 +9,12 @@ export default function Footer() {
       <div className="footer-links">
         <ul className="footer-icons">
           <li>
-            <a href="https://www.linkedin.com/in/sarah-iritie">
+            <a
+              href="https://www.linkedin.com/in/sarah-iritie"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="sr-only">LinkedIn</span>
               {isDark ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +48,13 @@ export default function Footer() {
           </li>
 
           <li>
-            <a href="https://github.com/Sarah-Iritie">
+            <a
+              href="https://github.com/Sarah-Iritie"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="sr-only">GitHub</span>
+
               {isDark ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

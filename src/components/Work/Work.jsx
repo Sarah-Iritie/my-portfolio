@@ -5,6 +5,15 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export default function Work() {
+  const handleGif = () => {
+    const newWindow = window.open(
+      'https://drive.google.com/file/d/1uKww-oQJl8deCgfJsbL4lMrgwOpWzNBZ/view?usp=sharing',
+      '_blank'
+    );
+    if (newWindow) {
+      newWindow.opener = null;
+    }
+  };
   const { isDark } = useDarkMode();
 
   // Slider settings
@@ -461,19 +470,14 @@ export default function Work() {
                 </div>
               </div>
               <div className="txt">
-                <a
-                  className="text-blank"
-                  href="https://www.adoptareborn.com/"
-                  target="_blank"
+                <p
+                  className={`txt-effect mg-top text-uppercase fw-regular ${
+                    isDark ? 'dark-text' : ''
+                  }`}
+                  onClick={handleGif}
                 >
-                  <p
-                    className={`txt-effect mg-top text-uppercase fw-regular ${
-                      isDark ? 'dark-text' : ''
-                    }`}
-                  >
-                    Voir le projet
-                  </p>
-                </a>
+                  Voir le projet
+                </p>
               </div>
             </div>
           </div>
@@ -481,7 +485,7 @@ export default function Work() {
           <div className={`gallery-item ${isDark ? 'dark-text' : ''}`}>
             <img
               src="../assets/memory_game.png"
-              alt="memory card game with illustrations"
+              alt="memory card game with black and white illustrations"
               width={466}
               height={491}
             />
@@ -604,7 +608,12 @@ export default function Work() {
               </div>
             </div>
             <div className="txt">
-              <a className="text-blank" href="#" target="_blank">
+              <a
+                className="text-blank"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p
                   className={`txt-effect mg-top text-uppercase fw-regular ${
                     isDark ? 'dark-text' : ''

@@ -52,7 +52,7 @@ export default function Home() {
                 <img
                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5em' height='5em' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%231d1d1f' stroke-linejoin='round'%3E%3Cpath d='M6 9a6 6 0 0 1 12 0v6a6 6 0 0 1-12 0z'/%3E%3Cpath stroke-linecap='round' d='M12 7v4'/%3E%3C/g%3E%3C/svg%3E"
                   style={{ marginTop: '20rem' }}
-                  alt="mouse icon dark mode"
+                  alt="mouse icon light mode"
                 />
                 <p className="scroll-text text-center animate__animated animate__pulse">
                   Scroll
