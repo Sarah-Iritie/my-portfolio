@@ -610,7 +610,7 @@ export default function Work() {
             <div className="txt">
               <a
                 className="text-blank"
-                href="#"
+                href="https://memo-flip.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
