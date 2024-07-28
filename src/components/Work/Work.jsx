@@ -8,7 +8,8 @@ export default function Work() {
   const handleGif = () => {
     const newWindow = window.open(
       'https://drive.google.com/file/d/1uKww-oQJl8deCgfJsbL4lMrgwOpWzNBZ/view?usp=sharing',
-      '_blank'
+      '_blank',
+      'noopener, noreferrer'
     );
     if (newWindow) {
       newWindow.opener = null;

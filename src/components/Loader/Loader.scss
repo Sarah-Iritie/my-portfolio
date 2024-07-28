@@ -1,0 +1,18 @@
+@use '@scssVariables' as v;
+
+.motion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &.dark {
+    background: v.$grey-dark;
+  }
+}
+
+.motion-img {
+  width: 500px;
+  margin-top: 20rem;
+  z-index: 999;
+}
