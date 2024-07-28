@@ -35,4 +35,5 @@ Voici les étapes pour exécuter ce projet localement :
 
 ## Utilisation
 
-Pour accéder à mon portfolio, entrez l'URL suivante : [http://localhost:5173/]
+Pour accéder à mon portfolio, entrez l'URL suivante :
+`http://localhost:5173/`
