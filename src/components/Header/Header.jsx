@@ -29,6 +29,10 @@ export default function Header() {
     toggleDark(); // Toggle light/dark mode
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={`nav ${isDark ? 'dark' : ''}`}>
       <div className="nav-header">
@@ -74,7 +78,7 @@ export default function Header() {
       <div className={`secondnav ${isDark ? 'dark' : ''}`}>
         <ul className="secondnav-menu">
           <li className="secondnav-item">
-            <a href="/">
+            <a href="#" onClick={scrollToTop}>
               <img src="../assets/home_icon.svg" alt="home icon" />
             </a>
           </li>
