@@ -16,3 +16,11 @@
   margin-top: 7rem;
   z-index: 999;
 }
+
+/*** Responsive ***/
+
+@media screen and (max-width: 425px) {
+  .motion-img {
+    margin-top: 4rem;
+  }
+}
