@@ -121,10 +121,6 @@
       }
     }
   }
-
-  .animation .animation-container img {
-    padding-top: 3rem;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -140,8 +136,23 @@
       }
     }
   }
+}
 
-  .animation .animation-container img {
-    padding-top: 1.3rem;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .animation {
+    &-container {
+      display: none;
+    }
+    .secondary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      cursor: pointer;
+
+      &-icon {
+        margin-top: 20rem;
+      }
+    }
   }
 }
