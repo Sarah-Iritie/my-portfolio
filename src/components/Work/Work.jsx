@@ -6,13 +6,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function Work() {
   const handleGif = () => {
-    const newWindow = window.open(
-      'https://drive.google.com/file/d/1uKww-oQJl8deCgfJsbL4lMrgwOpWzNBZ/view?usp=sharing',
-      '_blank',
-      'noopener, noreferrer'
-    );
+    const url =
+      'https://drive.google.com/file/d/1uKww-oQJl8deCgfJsbL4lMrgwOpWzNBZ/view?usp=sharing';
+
+    // Optionally, validate or sanitize URL here if it's dynamic or user-generated.
+
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) {
-      newWindow.opener = null;
+      newWindow.opener = null; // Ensuring no access to the opener window
     }
   };
   const { isDark } = useDarkMode();
